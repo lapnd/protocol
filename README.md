@@ -87,9 +87,11 @@ Details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ## Deploy
 
-`.github/workflows/pages.yml` builds and publishes to GitHub Pages on every
-push to `main` (it handles `basePath`). Change the site name, tagline and
-hub languages in [`src/site.config.ts`](src/site.config.ts).
+`.github/workflows/pages.yml` builds the site on every push to `main` and
+publishes it to the `gh-pages` branch (it sets `basePath` for you). Turn it
+on once in **Settings → Pages → Build and deployment**: Source "Deploy from a
+branch", branch `gh-pages`, folder `/ (root)`. Change the site name, tagline
+and hub languages in [`src/site.config.ts`](src/site.config.ts).
 
 ## Theme
 
