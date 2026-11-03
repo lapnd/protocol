@@ -1,13 +1,16 @@
 {
-  "name": "protocol-explorer",
+  "name": "explainer-lab",
   "version": "1.0.0",
   "private": true,
-  "description": "Watch the internet work, packet by packet. Interactive lessons on HTTP, HTTPS, TCP, UDP, IP, DNS, DHCP, ICMP, SMTP, POP3, IMAP, FTP, SSH and TLS, with every packet decoded byte by byte.",
+  "description": "A reusable template for interactive, step-by-step explainers. Ships with Protocol Explorer as a custom system plus data-driven sample explainers.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "validate": "tsc -p tsconfig.validate.json && node .cache/validate/scripts/validate-explainers.js",
+    "new:explainer": "node scripts/new-explainer.mjs",
+    "check": "npm run typecheck && npm run validate"
   },
   "dependencies": {
     "next": "^16.2.12",

@@ -1,0 +1,116 @@
+import type { LocaleCode } from "./types";
+
+/**
+ * Strings for the kit's own interface (buttons, labels). Add a locale by
+ * adding a key here; missing keys fall back to English.
+ */
+const en = {
+  allExplainers: "All explainers",
+  explainers: "Explainers",
+  lessons: "Lessons",
+  lesson: "Lesson",
+  step: "Step",
+  of: "of",
+  overview: "Overview",
+  start: "Start",
+  play: "Play",
+  pause: "Pause",
+  next: "Next",
+  prev: "Back",
+  replay: "Replay",
+  speed: "Speed",
+  goDeeper: "Go deeper",
+  quiz: "Quick check",
+  correct: "Correct!",
+  tryAgain: "Not quite, try again.",
+  done: "Done",
+  nextLesson: "Next lesson",
+  sources: "Sources",
+  glossary: "Glossary",
+  theme: "Theme",
+  light: "Light",
+  dark: "Dark",
+  language: "Language",
+  menu: "Menu",
+  close: "Close",
+  minutes: "min",
+  stepsCount: "steps",
+  lessonsCount: "lessons",
+  explore: "Explore",
+  progress: "Progress",
+  keyboardHint: "Space play · ← → step · Esc reset",
+  beginner: "Beginner",
+  intermediate: "Intermediate",
+  advanced: "Advanced",
+  draft: "Draft",
+  beta: "Beta",
+  stable: "Stable",
+  all: "All",
+  custom: "Interactive system",
+  legend: "Legend",
+};
+
+export type UiKey = keyof typeof en;
+
+const vi: Partial<Record<UiKey, string>> = {
+  allExplainers: "Tất cả chủ đề",
+  explainers: "Chủ đề",
+  lessons: "Bài học",
+  lesson: "Bài",
+  step: "Bước",
+  of: "/",
+  overview: "Tổng quan",
+  start: "Bắt đầu",
+  play: "Phát",
+  pause: "Tạm dừng",
+  next: "Tiếp",
+  prev: "Lùi",
+  replay: "Xem lại",
+  speed: "Tốc độ",
+  goDeeper: "Tìm hiểu sâu hơn",
+  quiz: "Kiểm tra nhanh",
+  correct: "Chính xác!",
+  tryAgain: "Chưa đúng, thử lại nhé.",
+  done: "Hoàn thành",
+  nextLesson: "Bài tiếp theo",
+  sources: "Nguồn tham khảo",
+  glossary: "Thuật ngữ",
+  theme: "Giao diện",
+  light: "Sáng",
+  dark: "Tối",
+  language: "Ngôn ngữ",
+  menu: "Menu",
+  close: "Đóng",
+  minutes: "phút",
+  stepsCount: "bước",
+  lessonsCount: "bài",
+  explore: "Khám phá",
+  progress: "Tiến độ",
+  keyboardHint: "Space phát · ← → chuyển bước · Esc về đầu",
+  beginner: "Cơ bản",
+  intermediate: "Trung bình",
+  advanced: "Nâng cao",
+  draft: "Nháp",
+  beta: "Beta",
+  stable: "Ổn định",
+  all: "Tất cả",
+  custom: "Hệ thống tương tác",
+  legend: "Chú giải",
+};
+
+const DICTS: Record<LocaleCode, Partial<Record<UiKey, string>>> = { en, vi };
+
+export const LOCALE_NAMES: Record<LocaleCode, string> = {
+  en: "English",
+  vi: "Tiếng Việt",
+  ja: "日本語",
+  ko: "한국어",
+  zh: "中文",
+  fr: "Français",
+  de: "Deutsch",
+  es: "Español",
+};
+
+export function ui(key: UiKey, locale: LocaleCode): string {
+  return DICTS[locale]?.[key] ?? en[key];
+}
