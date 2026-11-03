@@ -1,0 +1,39 @@
+1:"$Sreact.fragment"
+2:"/protocol/_next/static/chunks/3qfy96eoyh-ek.js"
+3:I[39756,["$2"],"default"]
+4:I[37457,["$2"],"default"]
+a:"/protocol/_next/static/chunks/0xf5nnas69r5j.js"
+b:"/protocol/_next/static/chunks/35zt33ihkq0qh.js"
+c:I[21660,["$2","$a","$b"],"default"]
+e:I[97367,["$2"],"OutletBoundary"]
+f:"$Sreact.suspense"
+12:"ViewportBoundary"
+13:I[97367,["$2"],"$12"]
+14:"MetadataBoundary"
+15:I[97367,["$2"],"$14"]
+:HL["/protocol/_next/static/chunks/2dhdv7rjl1_uq.css","style"]
+:HL["/protocol/_next/static/chunks/0y2hobx5u5su9.css","style"]
+6:X
+d:["$","p",null,{"style":{"margin":"40px","font":"16px/1.5 ui-monospace, monospace","color":"#00238a"},"children":"Protocol Explorer animates packets as they travel the network, so it needs JavaScript. Please turn it on to start the lessons."}]
+9:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[[["$","$Lc",null,{}],["$","noscript",null,{"children":"$d"}]],[["$","script","script-0",{"src":"/protocol/_next/static/chunks/0xf5nnas69r5j.js","async":true}],["$","script","script-1",{"src":"/protocol/_next/static/chunks/35zt33ihkq0qh.js","async":true}]],["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]]}],"p":"$@11","v":null,"s":"$6"}}]]
+7:[["children",{"s":"protocol","h":96,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/protocol/_next/static/chunks/0y2hobx5u5su9.css","precedence":"next"}]],["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}]}]]}],"p":"$@8","v":null,"s":"$6"},"c":"$Q9"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/protocol/_next/static/chunks/2dhdv7rjl1_uq.css","precedence":"next"}],["$","script","script-0",{"src":"/protocol/_next/static/chunks/3qfy96eoyh-ek.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\ntry {\n  var saved = localStorage.getItem('explainer:theme');\n  var dark = saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;\n  document.documentElement.dataset.theme = dark ? 'dark' : 'light';\n  document.documentElement.classList.toggle('dark', dark);\n} catch (e) {\n  document.documentElement.dataset.theme = 'light';\n}\n"}}]}],["$","body",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}]]}]]}],"p":"$@5","v":null,"s":"$6"},"c":"$Q7"},"h":{"r":["$","$1","h",{"children":[null,["$","$L13",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#f6f8fc","media":"(prefers-color-scheme: light)"}],["$","meta","3",{"name":"theme-color","content":"#0b1020","media":"(prefers-color-scheme: dark)"}],["$","meta","4",{"name":"color-scheme","content":"light dark"}]]}],["$","$L15",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$f",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Protocol Explorer · Learn how the internet works · Explainer Lab"}],["$","meta","1",{"name":"description","content":"Watch the internet work, packet by packet. Interactive lessons on HTTP, HTTPS, TCP, UDP, IP, DNS, DHCP, ICMP, SMTP, POP3, IMAP, FTP, SSH and TLS, with every packet decoded byte by byte."}],["$","meta","2",{"name":"author","content":"Dilum Sanjaya"}],["$","link","3",{"rel":"manifest","href":"/protocol/site.webmanifest"}],["$","meta","4",{"property":"og:title","content":"Protocol Explorer · Learn how the internet works"}],["$","meta","5",{"property":"og:description","content":"Watch the internet work, packet by packet: interactive lessons from DNS and TCP to TLS, with every packet decoded byte by byte."}],["$","meta","6",{"property":"og:site_name","content":"Protocol Explorer"}],["$","meta","7",{"property":"og:image","content":"https://example.com/protocol/og.png"}],["$","meta","8",{"property":"og:image:type","content":"image/png"}],["$","meta","9",{"property":"og:image:width","content":"1200"}],["$","meta","10",{"property":"og:image:height","content":"630"}],["$","meta","11",{"property":"og:image:alt","content":"Protocol Explorer: a network diagram with a TLS Server Hello packet travelling from the internet to a laptop's router."}],["$","meta","12",{"property":"og:type","content":"website"}],["$","meta","13",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","14",{"name":"twitter:creator","content":"@DilumSanjaya"}],["$","meta","15",{"name":"twitter:title","content":"Protocol Explorer · Learn how the internet works"}],["$","meta","16",{"name":"twitter:description","content":"Watch the internet work, packet by packet: interactive lessons from DNS and TCP to TLS, with every packet decoded byte by byte."}],"$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e"]}]}],null]}],null]}],"p":"$@1f","v":null,"s":"$6"}},"a":"$@20","u":"$@21","b":"BNMZA8est2VisorRgJLi-"}
+22:I[27201,["$2"],"IconMark"]
+10:null
+16:["$","meta","17",{"name":"twitter:image","content":"https://example.com/protocol/og.png"}]
+17:["$","meta","18",{"name":"twitter:image:alt","content":"Protocol Explorer: a network diagram with a TLS Server Hello packet travelling from the internet to a laptop's router."}]
+18:["$","meta","19",{"name":"twitter:image:type","content":"image/png"}]
+19:["$","meta","20",{"name":"twitter:image:width","content":"1200"}]
+1a:["$","meta","21",{"name":"twitter:image:height","content":"630"}]
+1b:["$","link","22",{"rel":"icon","href":"/protocol/favicon.ico","sizes":"16x16 32x32 48x48"}]
+1c:["$","link","23",{"rel":"icon","href":"/protocol/favicon.svg","type":"image/svg+xml"}]
+1d:["$","link","24",{"rel":"apple-touch-icon","href":"/protocol/apple-touch-icon.png"}]
+1e:["$","$L22","25",{}]
+6:300
+21:true
+6:C
+20:0
+8:"$undefined"
+5:"$undefined"
+1f:"$undefined"
+11:"$undefined"
