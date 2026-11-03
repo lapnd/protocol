@@ -1,7 +1,7 @@
 {
-  "name": "Protocol Explorer",
-  "short_name": "Protocols",
-  "description": "Watch the internet work, packet by packet: interactive lessons from DNS and TCP to TLS.",
+  "name": "Explainer Lab",
+  "short_name": "Explainers",
+  "description": "Interactive, step-by-step explainers, including Protocol Explorer.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

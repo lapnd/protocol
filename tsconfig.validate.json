@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": ".cache/validate",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "incremental": false,
+    "isolatedModules": false,
+    "allowJs": false,
+    "plugins": []
+  },
+  "include": ["scripts/validate-explainers.ts"],
+  "exclude": []
+}

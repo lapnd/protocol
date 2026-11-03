@@ -3,42 +3,42 @@
   font-style: normal;
   font-display: swap;
   font-weight: 400;
-  src: url("./fonts/iosevka-400-DnzhOSIo.woff2") format("woff2");
+  src: url("../../../kit/styles/fonts/iosevka-400-DnzhOSIo.woff2") format("woff2");
 }
 @font-face {
   font-family: Iosevka;
   font-style: normal;
   font-display: swap;
   font-weight: 500;
-  src: url("./fonts/iosevka-500-C4FA_zML.woff2") format("woff2");
+  src: url("../../../kit/styles/fonts/iosevka-500-C4FA_zML.woff2") format("woff2");
 }
 @font-face {
   font-family: Iosevka;
   font-style: normal;
   font-display: swap;
   font-weight: 600;
-  src: url("./fonts/iosevka-600-Dj5n5yBL.woff2") format("woff2");
+  src: url("../../../kit/styles/fonts/iosevka-600-Dj5n5yBL.woff2") format("woff2");
 }
 @font-face {
   font-family: Iosevka;
   font-style: normal;
   font-display: swap;
   font-weight: 700;
-  src: url("./fonts/iosevka-700-BxdwZZnN.woff2") format("woff2");
+  src: url("../../../kit/styles/fonts/iosevka-700-BxdwZZnN.woff2") format("woff2");
 }
 @font-face {
   font-family: Iosevka;
   font-style: normal;
   font-display: swap;
   font-weight: 800;
-  src: url("./fonts/iosevka-800-Ctjohn3a.woff2") format("woff2");
+  src: url("../../../kit/styles/fonts/iosevka-800-Ctjohn3a.woff2") format("woff2");
 }
 @font-face {
   font-family: Iosevka;
   font-style: italic;
   font-display: swap;
   font-weight: 800;
-  src: url("./fonts/iosevka-800-italic-D0Mo0HIB.woff2") format("woff2");
+  src: url("../../../kit/styles/fonts/iosevka-800-italic-D0Mo0HIB.woff2") format("woff2");
 }
 :root {
   --k-on-amber: #0b2b86;

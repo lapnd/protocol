@@ -285,7 +285,7 @@ export function renderTopbarHtml(): string {
   return `
   <header class="topbar">
     <button class="drawer-btn" type="button" data-t-label="Protocols" aria-label="${t("Protocols")}" aria-expanded="false" aria-controls="protocols">${ICONS.menu}<span ${tAttr("PROTOCOLS")}</span></button>
-    <div class="brand">
+    <a class="brand" href="${process.env.NEXT_PUBLIC_BASE_PATH || ""}/" title="All explainers" style="color:inherit;text-decoration:none">
       <div class="logo-frame">
         <span class="corner tl"></span><span class="corner tr"></span>
         <span class="corner bl"></span><span class="corner br"></span>
@@ -295,7 +295,7 @@ export function renderTopbarHtml(): string {
         <h1>PROTOCOL <em>EXPLORER</em></h1>
         <p ${tAttr("LEARN HOW THE INTERNET WORKS")}</p>
       </div>
-    </div>
+    </a>
 
     <span class="topbar-sep"></span>
     ${renderNowLearningHtml()}
@@ -400,7 +400,7 @@ export function updateTopbarState(
   );
 }
 
-const THEME_STORAGE_KEY = "protocol-explorer:theme";
+const THEME_STORAGE_KEY = "explainer:theme";
 const THEME_COLORS: Record<"light" | "dark", string> = {
   light: "#fdfdfe",
   dark: "#0b1020",
