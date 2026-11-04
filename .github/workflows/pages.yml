@@ -1,7 +1,7 @@
 name: Deploy to GitHub Pages
 
-# Builds the static site and publishes it to the `gh-pages` branch.
-# In Settings → Pages choose "Deploy from a branch" → `gh-pages` / `(root)`.
+# Builds the static site and deploys it with GitHub Actions.
+# In Settings → Pages set Source to "GitHub Actions".
 
 on:
   push:
@@ -9,14 +9,16 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -24,23 +26,26 @@ jobs:
         with:
           node-version: 24
           cache: npm
+      - id: pages
+        uses: actions/configure-pages@v5
       - run: npm ci
       - run: npm run typecheck
       - run: npm run validate
-      - name: Build
-        run: |
-          repo="${GITHUB_REPOSITORY#*/}"
-          if [[ "$repo" == *.github.io ]]; then base=""; else base="/$repo"; fi
-          NEXT_PUBLIC_BASE_PATH="$base" npm run build
-          touch out/.nojekyll
+      - run: npm run build
         env:
           NEXT_TELEMETRY_DISABLED: 1
-      - name: Publish to gh-pages
-        working-directory: out
-        run: |
-          git init -q -b gh-pages
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git commit -q -m "Deploy ${GITHUB_SHA}"
-          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+      - run: touch out/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
